@@ -17,6 +17,8 @@ async function registerStudentService(name, career) {
     return response.json();
 }
 
+// Obtiene la información de un estudiante por su ID.
+// Realiza una petición GET al endpoint /api/students/{id} y retorna la respuesta como JSON.
 async function getStudentByIdService(id) {
     const response = await fetch(`${API_URL}/${id}`, {
         method: "GET",
