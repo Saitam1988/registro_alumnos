@@ -1,0 +1,27 @@
+[
+  {
+    "id": 4,
+    "name": "Tecnicatura superior",
+    "branch": "Tecnologia"
+  },
+  {
+    "id": 8,
+    "name": "CIencias del ARte",
+    "branch": "Arte y diseño"
+  },
+  {
+    "id": 9,
+    "name": "Ciencias",
+    "branch": "Sociales"
+  },
+  {
+    "id": 10,
+    "name": "Ingenieria",
+    "branch": "Exactas"
+  },
+  {
+    "id": 11,
+    "name": "Ingles",
+    "branch": "Lenguaje"
+  }
+]

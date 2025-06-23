@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Ingeniería en Sistemas",
+    "duration": 5,
+    "category": "Tecnología"
+  },
+  {
+    "id": 2,
+    "name": "Abogacía",
+    "duration": 4,
+    "category": "Ciencias Sociales"
+  },
+  {
+    "id": 3,
+    "name": "Contador Público",
+    "duration": 5,
+    "category": "Económicas"
+  },
+  {
+    "id": 921,
+    "name": "Ingles",
+    "duration": 3,
+    "category": "Tecnicatura superior"
+  },
+  {
+    "id": 321,
+    "name": "Enpermeria",
+    "duration": 4,
+    "category": "Cs de la Salud"
+  },
+  {
+    "id": 1232,
+    "name": "Maestra de Grado",
+    "duration": 4,
+    "category": "Humanidades"
+  },
+  {
+    "id": 112,
+    "name": "Filantropia",
+    "duration": 5,
+    "category": "Humanidades"
+  },
+  {
+    "id": 74,
+    "name": "Paleontologia",
+    "duration": 5,
+    "category": "Ciencias"
+  }
+]

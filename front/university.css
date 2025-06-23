@@ -1,0 +1,203 @@
+/* Colores principales */
+:root {
+  --primary-color: #5d8aa8; /* Azul tenue */
+  --secondary-color: #a2b9bc; /* Gris azulado */
+  --accent-color: #b2beb5; /* Verde grisáceo */
+  --light-color: #f5f5f5; /* Gris muy claro */
+  --dark-color: #36454f; /* Gris oscuro */
+  --text-color: #333333; /* Texto principal */
+  --text-light: #666666; /* Texto secundario */
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: var(--primary-color) !important; /* ¡IMPORTANTE para sobrescribir Bootstrap! */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Encabezado universitario */
+.university-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.university-header h1 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.university-header .lead {
+  opacity: 0.9;
+}
+
+/* Tarjetas */
+.card {
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 8px 8px 0 0 !important;
+  padding: 1rem 1.5rem;
+}
+
+.card-header h2 {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+/* Formularios */
+.form-control, .form-select {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(93, 138, 168, 0.25);
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4a7795;
+  border-color: #4a7795;
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Tablas */
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background-color: var(--light-color);
+  border-bottom: 2px solid #dee2e6;
+  font-weight: 600;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(93, 138, 168, 0.05);
+}
+
+/* Modales */
+.modal-header {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 8px 8px 0 0;
+}
+
+.modal-title {
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+footer .btn-link {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+footer .btn-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Mapa de contacto */
+.contact-map {
+  height: 250px;
+  border-radius: 8px;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+}
+
+/* Listas */
+.list-group-item {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 0.5rem;
+  border-radius: 6px !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .university-header {
+    padding: 1.5rem 0;
+  }
+  
+  .university-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .card-header h2 {
+    font-size: 1.3rem;
+  }
+}
