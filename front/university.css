@@ -1,190 +1,202 @@
 /* Colores principales */
 :root {
-  --primary-color: #5d8aa8; /* Azul tenue */
+  --primary-color: #3498db; /* Azul principal */
   --secondary-color: #a2b9bc; /* Gris azulado */
   --accent-color: #b2beb5; /* Verde grisáceo */
   --light-color: #f5f5f5; /* Gris muy claro */
   --dark-color: #36454f; /* Gris oscuro */
-  --text-color: #333333; /* Texto principal */
-  --text-light: #666666; /* Texto secundario */
+  --text-color: #ecf0f1; /* Texto principal claro */
+  --text-light: #bdc3c7; /* Texto secundario */
 }
 
 /* Estilos generales */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-color);
-  background-color: #f9f9f9;
+  background: linear-gradient(135deg, #2c3e50, #1a252f);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   line-height: 1.6;
 }
 
-/* Barra de navegación */
+/* ====== NAVBAR ====== */
 .navbar {
-  background-color: var(--primary-color) !important; /* ¡IMPORTANTE para sobrescribir Bootstrap! */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: rgba(44, 62, 80, 0.9);
+  border-bottom: 2px solid #3498db;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
-.navbar-brand {
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-}
-
 .navbar-brand img {
-  height: 40px;
-  margin-right: 10px;
+  filter: invert(100%);
 }
 
-.nav-link {
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  transition: all 0.3s ease;
-}
-
-.nav-link:hover {
-  opacity: 0.8;
-}
-
-/* Encabezado universitario */
+/* ====== HEADER PRINCIPAL ====== */
 .university-header {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 2rem 0;
+  padding: 3rem 0;
+  background: rgba(52, 152, 219, 0.1);
+  border-radius: 15px;
   margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(52, 152, 219, 0.3);
 }
 
-.university-header h1 {
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.university-header .lead {
-  opacity: 0.9;
-}
-
-/* Tarjetas */
+/* ====== CARD ====== */
 .card {
+  background: rgba(52, 73, 94, 0.8);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+.card-header {
+  background: rgba(44, 62, 80, 0.9);
+  border-bottom: 1px solid #3498db;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  color: #ecf0f1;
+}
+
+/* ====== FORMULARIOS ====== */
+.form-control, .form-select {
+  background-color: rgba(60, 80, 100, 0.7);
+  border: 1px solid #3498db;
+  color: #ecf0f1;
+  border-radius: 8px;
+}
+.form-control::placeholder {
+  color: #bdc3c7;
+}
+.form-control:focus, .form-select:focus {
+  border-color: #2ecc71;
+  box-shadow: 0 0 0 0.25rem rgba(46, 204, 113, 0.25);
+  background-color: rgba(60, 80, 100, 0.9);
+}
+
+/* ====== BOTONES ====== */
+.btn-primary {
+  background: linear-gradient(45deg, #3498db, #2980b9);
   border: none;
   border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 1.5rem;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.card-header {
-  background-color: var(--primary-color);
-  color: white;
-  border-radius: 8px 8px 0 0 !important;
-  padding: 1rem 1.5rem;
-}
-
-.card-header h2 {
-  margin-bottom: 0;
-  font-size: 1.5rem;
-}
-
-/* Formularios */
-.form-control, .form-select {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 0.5rem 1rem;
-  transition: border-color 0.3s ease;
-}
-
-.form-control:focus, .form-select:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 0.25rem rgba(93, 138, 168, 0.25);
-}
-
-/* Botones */
-.btn-primary {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  padding: 0.5rem 1.5rem;
-  border-radius: 6px;
-  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
-
 .btn-primary:hover {
-  background-color: #4a7795;
-  border-color: #4a7795;
+  background: linear-gradient(45deg, #2980b9, #3498db);
   transform: translateY(-2px);
 }
-
+.btn-danger {
+  background: linear-gradient(45deg, #e74c3c, #c0392b);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-danger:hover {
+  background: linear-gradient(45deg, #c0392b, #e74c3c);
+  transform: translateY(-2px);
+}
 .btn-outline-primary {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: #3498db;
+  border-color: #3498db;
+  transition: all 0.3s ease;
 }
-
 .btn-outline-primary:hover {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: #3498db;
+  color: #ecf0f1;
+  box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
 }
 
-/* Tablas */
+/* ====== TABLAS ====== */
 .table {
   margin-bottom: 0;
+  color: #ecf0f1;
 }
-
+.table thead {
+  background-color: rgba(44, 62, 80, 0.9);
+  color: #ecf0f1;
+}
 .table thead th {
-  background-color: var(--light-color);
+  background-color: var(--light-color, #f8f9fa);
   border-bottom: 2px solid #dee2e6;
   font-weight: 600;
 }
-
 .table-hover tbody tr:hover {
   background-color: rgba(93, 138, 168, 0.05);
+  color: #ecf0f1;
+}
+.table tbody {
+  background-color: rgba(52, 73, 94, 0.7);
+  transition: opacity 0.2s;
+}
+.table.updating tbody {
+  opacity: 0.5;
 }
 
-/* Modales */
+/* ====== MENSAJES VACÍOS ====== */
+.text-secondary {
+  color: #bdc3c7 !important;
+}
+.d-none {
+  display: none !important;
+}
+
+/* ====== MODALES ====== */
+.modal-content {
+  background: linear-gradient(135deg, #2c3e50, #1a252f);
+  color: #ecf0f1;
+  border-radius: 15px;
+  border: 1px solid #3498db;
+  box-shadow: 0 0 25px rgba(52, 152, 219, 0.5);
+}
 .modal-header {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color, #3498db);
   color: white;
-  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid #3498db;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.modal-footer {
+  border-top: 1px solid #3498db;
 }
 
-.modal-title {
-  font-weight: 600;
-}
-
-/* Footer */
-footer {
-  background-color: var(--dark-color);
-  color: white;
-  padding: 2rem 0;
-  margin-top: 3rem;
-}
-
-footer .btn-link {
-  color: white;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
-}
-
-footer .btn-link:hover {
-  opacity: 0.8;
-  text-decoration: underline;
-}
-
-/* Mapa de contacto */
+/* ====== MAPA DE CONTACTO ====== */
 .contact-map {
-  height: 250px;
-  border-radius: 8px;
-  margin-top: 1rem;
-  border: 1px solid #ddd;
+  border-radius: 10px;
+  border: 1px solid #3498db;
 }
 
-/* Listas */
-.list-group-item {
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  margin-bottom: 0.5rem;
-  border-radius: 6px !important;
+/* ====== FOOTER ====== */
+footer {
+  background: rgba(44, 62, 80, 0.9);
+  color: #bdc3c7;
+  padding: 1.5rem 0;
+  border-top: 2px solid #3498db;
+  margin-top: auto;
+}
+
+/* ====== SWEETALERT2 PERSONALIZADO ====== */
+.swal2-popup {
+  background-color: #2c3e50 !important;
+  color: #ecf0f1 !important;
+  border: 1px solid #3498db !important;
+  border-radius: 15px !important;
+}
+.swal2-title {
+  color: #ecf0f1 !important;
+}
+.swal2-html-container {
+  color: #bdc3c7 !important;
+}
+.swal2-confirm {
+  background-color: #3498db !important;
+  color: #ecf0f1 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+}
+.swal2-cancel {
+  background-color: #e74c3c !important;
+  color: #ecf0f1 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
 }
 
 /* Responsive */
@@ -192,11 +204,9 @@ footer .btn-link:hover {
   .university-header {
     padding: 1.5rem 0;
   }
-  
   .university-header h1 {
     font-size: 1.8rem;
   }
-  
   .card-header h2 {
     font-size: 1.3rem;
   }

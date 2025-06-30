@@ -370,6 +370,14 @@ class CareerUI {
         });
     }
 
+    // Limpia el formulario de registro de carreras
+    static clearCareerForm() {
+        document.getElementById('careerId').value = '';
+        document.getElementById('careerName').value = '';
+        document.getElementById('careerDuration').value = '';
+        document.getElementById('careerCategory').value = '';
+    }
+
     // Llena los dropdowns de carreras en los formularios
     static async populateCareersDropdowns() {
         const registerCareerSelect = document.getElementById('registerCareer');
@@ -540,4 +548,5 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('categoriesTableBody')) {
         CategoryUI.loadCategories();
     }
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
 });

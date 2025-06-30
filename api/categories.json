@@ -23,5 +23,15 @@
     "id": 11,
     "name": "Ingles",
     "branch": "Lenguaje"
+  },
+  {
+    "id": 12,
+    "name": "Licenciatura",
+    "branch": "derecho"
+  },
+  {
+    "id": 13,
+    "name": "Diplomatura Tecnica",
+    "branch": "Cienciologia"
   }
 ]
