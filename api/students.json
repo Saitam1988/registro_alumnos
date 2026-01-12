@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "023",
+    "name": "Marti Ote",
+    "career": "Medicina",
+    "age": 36,
+    "email": "ote@g"
+  },
+  {
+    "id": "221",
+    "name": "Flor",
+    "career": "Ingles",
+    "age": 28,
+    "email": "hhsa@jsda"
+  },
+  {
+    "id": "0021",
+    "name": "Pati",
+    "career": "Abogacía",
+    "age": 28,
+    "email": "mare@gmail.com"
+  },
+  {
+    "id": "231",
+    "name": "Gaspar Aguero",
+    "career": "Abogacía",
+    "age": 18,
+    "email": "Ga@gmail.com"
+  },
+  {
+    "id": "332",
+    "name": "Carlo  Olivera",
+    "career": "Maestra de Grado",
+    "age": 26,
+    "email": "Carlo@gmail.com"
+  },
+  {
+    "id": "156",
+    "name": "fiore barros",
+    "career": "Ingles",
+    "age": 25,
+    "email": "fiore@gmail"
+  }
+]
